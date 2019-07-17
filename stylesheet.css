@@ -22,6 +22,11 @@ html{
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
+article{
+  display: grid;
+  place-items: center;
+}
+
 h1,h3{
   color:white;
   text-shadow: 8px 8px 7px black;
@@ -74,6 +79,8 @@ display:grid;
 .items > ul > li {
   border: 1px solid #E2E2E2;
   border-radius: .5rem;
+  display: grid;
+  place-items: center;
 }
 .items > ul > li > figure{
   max-height: 220px;
