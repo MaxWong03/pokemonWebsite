@@ -22,9 +22,10 @@ html{
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-h1{
+h1,h3{
   color:white;
   text-shadow: 8px 8px 7px black;
+  text-align: center;
 }
 
 
@@ -49,21 +50,6 @@ p{
 }
 
 
-.items > ul{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  grid-gap: 1rem;
-  list-style: none;
-}
-
-li{
-  place-self: center;
-}
-
-img{
-  clip-path: circle(50% at 50% 50%);
-  width:30em;
-}
 
 a{
   text-decoration: none;
@@ -75,4 +61,40 @@ a{
   opacity: 0.95;
   margin-top: 0.75rem;
   display:inline-block;
+}
+
+.items > ul{
+display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  list-style: none;
+  place-items: stretch;
+}
+
+.items > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+}
+.items > ul > li > figure{
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.items > ul > li > figure > img{
+  width: 100%;
+}
+
+.items > ul > li > figure > figcaption{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+}
+
+.items > ul > li > a {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
 }
