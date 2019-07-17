@@ -1,0 +1,40 @@
+html{
+  scroll-behavior: smooth;
+  background: url('https://pm1.narvii.com/6165/2d5ad5cf7cfe05a19b3023d83807ec8cd880a3df_hq.jpg') ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+}
+
+
+
+.hero{
+  background: url('https://s3.amazonaws.com/prod-media.gameinformer.com/styles/full/s3/2018/11/12/21b2e3a1/Key%20Art%20-%20Pok%C3%87mon%20League.jpeg') center;
+  background-size: cover;
+  padding: 22rem;
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.items > ul{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-gap: 1rem;
+  list-style: none;
+}
+
+li{
+  place-self: center;
+}
+
+img{
+  clip-path: circle(50% at 50% 50%);
+  width:30em;
+}
+
