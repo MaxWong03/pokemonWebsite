@@ -20,6 +20,7 @@ html{
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
 }
 
 article{
@@ -104,4 +105,9 @@ display:grid;
 .items > ul > li > a {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
+}
+
+.swipe-container{
+  width: 600px;
+  height: 300px;
 }
