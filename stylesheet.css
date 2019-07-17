@@ -1,3 +1,7 @@
+*{
+  font-family: "Flexo-Medium",arial,sans-serif;
+}
+
 html{
   scroll-behavior: smooth;
   background: url('https://pm1.narvii.com/6165/2d5ad5cf7cfe05a19b3023d83807ec8cd880a3df_hq.jpg') ;
@@ -5,22 +9,45 @@ html{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-
-
 }
-
-
 
 .hero{
   background: url('https://s3.amazonaws.com/prod-media.gameinformer.com/styles/full/s3/2018/11/12/21b2e3a1/Key%20Art%20-%20Pok%C3%87mon%20League.jpeg') center;
   background-size: cover;
   padding: 22rem;
-
+  
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
+h1{
+  color:white;
+  text-shadow: 8px 8px 7px black;
+}
+
+
+@media screen and (min-width: 320px){
+  a,h1{
+    font-size: calc(16px + 19 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px){
+  a,h1{
+    font-size: 35px;
+  }
+}
+
+p{
+  color: white;
+  text-shadow: 6px 6px 8px black;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
 
 .items > ul{
   display:grid;
@@ -38,3 +65,14 @@ img{
   width:30em;
 }
 
+a{
+  text-decoration: none;
+  background-color: #313131;
+  color:white;
+  border-radius: 1rem;
+  text-align: center; 
+  padding: 1rem;
+  opacity: 0.95;
+  margin-top: 0.75rem;
+  display:inline-block;
+}
