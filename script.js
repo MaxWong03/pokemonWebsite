@@ -1,8 +1,11 @@
-let mySwiper = new mySwiper('.swiper-container',{
-  direction: 'vertical',
+let mySwiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
   loop: true,
-  navigation:{
+  loopFillGroupWithBlank: true,
+  navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-}) 
+});

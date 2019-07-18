@@ -2,6 +2,7 @@
   font-family: "Flexo-Medium",arial,sans-serif;
 }
 
+
 html{
   scroll-behavior: smooth;
   background: url('https://pm1.narvii.com/6165/2d5ad5cf7cfe05a19b3023d83807ec8cd880a3df_hq.jpg') ;
@@ -107,7 +108,13 @@ display:grid;
   margin-bottom: 1rem;
 }
 
-.swipe-container{
-  width: 600px;
-  height: 300px;
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
+
+.swiper-slide{
+  display: flex;
+  place-items: center;
+}
+
