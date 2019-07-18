@@ -151,3 +151,11 @@ display:grid;
 .swiper-container > .swiper-wrapper > .swiper-slide > img{
   max-height: 18rem;
 }
+
+.swiper-slide-prev{
+  opacity: 0.3;
+}
+
+.swiper-slide-next{
+  opacity: 0.3;
+}
