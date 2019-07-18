@@ -148,3 +148,6 @@ display:grid;
   transition: opacity 0.5s;
 }
 
+.swiper-container > .swiper-wrapper > .swiper-slide > img{
+  max-height: 18rem;
+}
