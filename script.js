@@ -3,6 +3,7 @@ let mySwiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
   slidesPerGroup: 1,
   loop: true,
+  autoHeight: true,
   loopFillGroupWithBlank: true,
   navigation: {
     nextEl: '.swiper-button-next',

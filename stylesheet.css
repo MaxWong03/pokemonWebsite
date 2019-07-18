@@ -110,7 +110,6 @@ display:grid;
 
 .swiper-container {
   width: 100%;
-  height: 100%;
 }
 
 .swiper-slide{
@@ -118,3 +117,14 @@ display:grid;
   place-items: center;
 }
 
+[class*='swiper-button']{
+  background-color: #313131;
+  opacity: 0.5;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+[class*='swiper-button']:hover{
+  opacity:0.9;
+  transition: opacity 0.5s;
+}
