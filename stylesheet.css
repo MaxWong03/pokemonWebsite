@@ -338,6 +338,10 @@ ol{
   justify-content: center;
 }
 
+[id*=info]{
+  text-shadow: 3px 3px 5px black;
+}
+
 [class*='type-tag']{
   border-radius: 0.25rem;
   padding: 0.5rem;
@@ -345,56 +349,74 @@ ol{
 }
 
 .type-tag-normal{
-  
+  background: #A8A878;
+  border: 1px solid #6D6D4E;
 }
 .type-tag-fire{
-  
+  background: #F08030;
+  border: 1px solid #9C531F;
 }
 .type-tag-fighting{
-  
+  background: #C03028;
+  border: 1px solid #7D1F1A;
 }
 .type-tag-water{
-  
+  background: #6890F0;
+  border: 1px solid #445E9C;
 }
 .type-tag-flying{
-  
+  background: #A890F0;
+  border: 1px solid #6D5E9C;
 }
 .type-tag-grass{
-  
+  background: #78C850;
+  border: 1px solid #4E8234;
 }
 .type-tag-poison{
-  
+  background: #A040A0;
+  border: 1px solid #682A68;
 }
 .type-tag-electric{
-  
+  background: #F8D030;
+  border: 1px solid #A1871F;
 }
 .type-tag-ground{
-  
+  background: #E0C068;
+  border: 1px solid #927D44;
 }
-.type-tag-psychi{
-  
+.type-tag-psychic{
+  background: #F85888;
+  border: 1px solid #A13959;
 }
 .type-tag-rock{
-  
+  background: #B8A038;
+  border: 1px solid #786824;
 }
 .type-tag-ice{
-  
+  background: #98D8D8;
+  border: 1px solid #638D8D;
 }
 .type-tag-bug{
-  
+  background: #A8B820;
+  border: 1px solid #6D7815;
 }
 .type-tag-dragon{
-  
+  background: #7038F8;
+  border: 1px solid #4924A1;
 }
 .type-tag-ghost{
-  
+  background: #705898;
+  border: 1px solid #493963;
 }
 .type-tag-dark{
-  
+  background: #705848;
+  border: 1px solid #49392F;
 }
 .type-tag-steel{
-  
+  background: #B8B8D0;
+  border: 1px solid #787887;
 }
 .type-tag-fairy{
-  
+  background: #EE99AC;
+  border: 1px solid #9B6470;
 }

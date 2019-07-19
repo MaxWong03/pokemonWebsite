@@ -24,10 +24,10 @@ const randPokedex = () => {
 }
 
 const parseDex = (dexNum) => {
-  if(dexNum[0] === '0'){
+  if(dexNum[0] === '0' && dexNum[1] !== '0'){
     return dexNum.substring(1);
   }else if (dexNum[0] === '0' && dexNum[1] === '0'){
-    return dexNum.substring(2);
+    return dexNum[2];
   }else{
     return dexNum;
   }
