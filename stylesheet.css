@@ -171,6 +171,7 @@ display:grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: .5rem;
   align-items: start;
+  grid-auto-flow: dense;
 }
 
 .column_item{
@@ -232,12 +233,31 @@ display:grid;
   display:inline-block;
 }
 
-
-.card_tag--shock{
-  background-color: rgb(193, 193, 0);
+.card_tag--rare{
+  background-color: rgb(16, 15, 15)
 }
 
-.card_tag--cuteButDang{
+.card_tag--flyer{
+  background-color: brown
+}
+
+.card_tag--fight{
+  background-color: rgb(255, 174, 0)
+}
+
+.card_tag--eat{
+  background-color: rgba(218, 164, 173, 0.811)
+}
+
+.card_tag--legend{
+  background-color: rgb(16, 138, 172)
+}
+
+.card_tag--friendly{
+  background-color: rgb(8, 96, 247);
+}
+
+.card_tag--cute{
   background-color: rgb(183, 38, 183);
 }
 
@@ -306,3 +326,4 @@ display:grid;
 ol{
   list-style-type: none;
 }
+
