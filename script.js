@@ -1,3 +1,4 @@
+
 let mySwiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   spaceBetween: 200,
@@ -12,7 +13,7 @@ let mySwiper = new Swiper('.swiper-container', {
 
 const randPokedex = () => {
   const min = 1;
-  const max = 810;
+  const max = 808;
   let pokedex = Math.floor(Math.random() * (max - min)) + min;
   if (pokedex < 10) {
     return '00' + pokedex;
@@ -51,7 +52,7 @@ async function getPokeInfo (dexNum){
   try{
     const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${dexNum}/`);
     const data = await result.json();
-    console.log(data);
+    console.log(data.stats[5].stat.name);
     const info = 
     `
     No. #${data.id} <br>
@@ -79,3 +80,4 @@ async function randPokemon (){
 }
 
 randPokemon();
+
