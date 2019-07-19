@@ -23,14 +23,27 @@ const randPokedex = () => {
   }
 }
 
+const parseDex = (dexNum) => {
+  if(dexNum[0] === '0'){
+    return dexNum.substring(1);
+  }else if (dexNum[0] === '0' && dexNum[1] === '0'){
+    return dexNum.substring(2);
+  }else{
+    return dexNum;
+  }
+}
+
 async function getPokeInfo (dexNum){
   try{
     const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${dexNum}/`);
     const data = await result.json();
+    console.log(data.types);
     const info = 
     `
-    No. #${data.id} <br><br>
-    Name: ${data.name.toUpperCase()}
+    No. #${data.id} <br>
+    Name: ${data.name.toUpperCase()} <br>
+    Height: ${(data.height*0.1).toFixed(2)} m 
+    Weight: ${(data.weight*0.1).toFixed(2)} kg
     `;
     return info;
   } catch(error){
@@ -46,7 +59,8 @@ async function randPokemon (){
     attri.value = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${newPokemon}.png`;
     slide = slide.setAttributeNode(attri);
     let info = document.querySelector(`#info${i}`);
-    info.innerHTML = (`${await getPokeInfo(newPokemon)}`);
+    console.log(parseDex(newPokemon));
+    info.innerHTML = (`${await getPokeInfo(parseDex(newPokemon))}`);
   }
 }
 
