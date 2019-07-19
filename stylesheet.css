@@ -331,3 +331,15 @@ display:grid;
 ol{
   list-style-type: none;
 }
+
+.typing{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+[class*='type-tag']{
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 0.25rem;
+}

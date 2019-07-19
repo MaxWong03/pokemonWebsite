@@ -34,12 +34,13 @@ const parseDex = (dexNum) => {
 }
 
 const getTypes = (pokeData) =>{
-  let typeString = ``;
+  let typeString = '<div class=typing>';
   for (let i = 0; i < pokeData.types.length; i ++){
     const type = pokeData.types[i].type.name;
     typeString += `<div class=type-tag-${type}> ${type} </div>`;
   }
-  return typeString;
+
+  return typeString + '</div>';
 } 
 
 async function getPokeInfo (dexNum){
