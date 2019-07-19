@@ -51,7 +51,6 @@ async function getPokeInfo (dexNum){
   try{
     const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${dexNum}/`);
     const data = await result.json();
-    console.log(data.types);
     const info = 
     `
     No. #${data.id} <br>
@@ -74,7 +73,6 @@ async function randPokemon (){
     attri.value = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${newPokemon}.png`;
     slide = slide.setAttributeNode(attri);
     let info = document.querySelector(`#info${i}`);
-    console.log(parseDex(newPokemon));
     info.innerHTML = (`${await getPokeInfo(parseDex(newPokemon))}`);
   }
 }
