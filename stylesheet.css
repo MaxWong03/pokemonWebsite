@@ -84,7 +84,7 @@ display:grid;
 }
 
 .items > ul > li {
-  border: 3px solid #E2E2E2;
+  border: 3px solid #E2E2E2; 
   border-radius: .5rem;
   display: grid;
   place-items: center;
@@ -148,6 +148,11 @@ display:grid;
 [class*='swiper-button']:hover{
   opacity:0.9;
   transition: opacity 0.5s;
+}
+
+.swiper-slide{
+  display: grid;
+  place-items: center;
 }
 
 .swiper-container > .swiper-wrapper > .swiper-slide > img{
@@ -326,4 +331,3 @@ display:grid;
 ol{
   list-style-type: none;
 }
-
