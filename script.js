@@ -51,6 +51,7 @@ async function getPokeInfo (dexNum){
   try{
     const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${dexNum}/`);
     const data = await result.json();
+    console.log(data);
     const info = 
     `
     No. #${data.id} <br>

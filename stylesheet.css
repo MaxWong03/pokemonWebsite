@@ -12,6 +12,8 @@ html{
   background-size: cover;
 }
 
+
+
 .hero{
   background: url('https://s3.amazonaws.com/prod-media.gameinformer.com/styles/full/s3/2018/11/12/21b2e3a1/Key%20Art%20-%20Pok%C3%87mon%20League.jpeg') center;
   background-size: cover;
@@ -21,8 +23,11 @@ html{
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  justify-content: center;
 
 }
+
+
 
 article{
   display: grid;
