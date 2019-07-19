@@ -33,6 +33,15 @@ const parseDex = (dexNum) => {
   }
 }
 
+const getTypes = (pokeData) =>{
+  let typeString = ``;
+  for (let i = 0; i < pokeData.types.length; i ++){
+    const type = pokeData.types[i].type.name;
+    typeString += `<div class=type-tag-${type}> ${type} </div>`;
+  }
+  return typeString;
+} 
+
 async function getPokeInfo (dexNum){
   try{
     const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${dexNum}/`);
@@ -43,7 +52,8 @@ async function getPokeInfo (dexNum){
     No. #${data.id} <br>
     Name: ${data.name.toUpperCase()} <br>
     Height: ${(data.height*0.1).toFixed(2)} m 
-    Weight: ${(data.weight*0.1).toFixed(2)} kg
+    Weight: ${(data.weight*0.1).toFixed(2)} kg <br>
+    ${getTypes(data)}
     `;
     return info;
   } catch(error){
