@@ -71,6 +71,10 @@ a{
   text-shadow: 8px 8px 8px black;
 }
 
+.items{
+  margin-top: 5rem;
+}
+
 .items > ul{
 display:grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -112,6 +116,7 @@ display:grid;
 
 
 .slideShowTitle{
+  margin-top: 5rem;
   grid-template-columns: repeat(auto-fit, minMax(350px, 1fr));
   background-color: #313131;
   color: white;
@@ -129,10 +134,7 @@ display:grid;
   border-left: 3px solid #E2E2E2;
   border-right:3px solid #E2E2E2;
   border-bottom: 3px solid #E2E2E2;
-
 }
-
-
 
 [class*='swiper-button']{
   background-color: #313131;
@@ -158,4 +160,126 @@ display:grid;
 
 .swiper-slide-next{
   opacity: 0.3;
+}
+
+.pokemonSighting{
+  padding: 1rem;
+}
+
+.column_list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: .5rem;
+  align-items: start;
+}
+
+.column_item{
+  border-radius: .2rem;
+  background-color: #dfe3e6;
+  padding: .5rem;
+}
+
+.column_title--wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: .25rem;
+  align-items: center;
+}
+
+.column_title--wrapper h2{
+  color: #17394d;
+  font-weight: 700;
+  font-size: .9rem;
+  place-self: stretch
+}
+
+.column_title--wrapper i{
+  text-align: right;
+  color: #798d99;
+}
+
+.column_item--cta{
+  padding: .25rem;
+  display: flex;
+  color: #798d99;
+  align-items: baseline;
+}
+
+.column_item--cta i {
+  margin-right: .25rem;
+}
+
+.card_list{
+  display:grid;
+  grid-template-rows: auto;
+  grid-gap: .5rem;
+  margin: .5rem 0;
+}
+
+.card_item{
+  background-color:white;
+  broder-radius: .25rem;
+  box-shadow: 5px 10px 5px rgba(9, 45, 66,.25);
+  padding: .5rem;
+}
+
+.card_tag{
+  font-size: .75rem;
+  padding: .1rem .5rem;
+  border-radius: .25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: .75rem;
+  display:inline-block
+}
+
+.card_tag--browser{
+  background-color: #c377e0;
+}
+
+.card_tag--high{
+  background-color:#eb5a46;
+}
+
+.card_title{
+  color:#17395d;
+  margin-bottom: .75rem;
+}
+
+.card_actions{
+  display:flex;
+  align-items: center;
+}
+
+.card_actions--wrapper i {
+  color: #798d99;
+  margin-right: .5rem;
+}
+
+.pokemonSighting ul{
+  list-style: none;
+}
+
+.sightingTitle{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  place-items: center;
+}
+
+.sightingTitle figure {
+  margin-top: 5rem;
+  position:relative;
+  
+}
+
+.sightingTitle figure img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.sightingTitle figure figcaption{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
 }
