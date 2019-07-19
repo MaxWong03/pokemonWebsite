@@ -37,11 +37,15 @@ const getTypes = (pokeData) =>{
   let typeString = '<div class=typing>';
   for (let i = 0; i < pokeData.types.length; i ++){
     const type = pokeData.types[i].type.name;
-    typeString += `<div class=type-tag-${type}> ${type} </div>`;
+    typeString += `<div class=type-tag-${type}> ${upFirst(type)} </div>`;
   }
 
   return typeString + '</div>';
 } 
+
+const upFirst = (string) => {
+  return string[0].toUpperCase() + string.substring(1);
+}
 
 async function getPokeInfo (dexNum){
   try{
@@ -51,7 +55,7 @@ async function getPokeInfo (dexNum){
     const info = 
     `
     No. #${data.id} <br>
-    Name: ${data.name.toUpperCase()} <br>
+    Name: ${upFirst(data.name)} <br>
     Height: ${(data.height*0.1).toFixed(2)} m 
     Weight: ${(data.weight*0.1).toFixed(2)} kg <br>
     ${getTypes(data)}
