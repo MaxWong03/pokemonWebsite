@@ -168,7 +168,7 @@ display:grid;
 
 .column_list{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: .5rem;
   align-items: start;
 }
@@ -183,7 +183,6 @@ display:grid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: .25rem;
-  align-items: center;
 }
 
 .column_title--wrapper h2{
@@ -218,7 +217,7 @@ display:grid;
 
 .card_item{
   background-color:white;
-  broder-radius: .25rem;
+  border-radius: .25rem;
   box-shadow: 5px 10px 5px rgba(9, 45, 66,.25);
   padding: .5rem;
 }
@@ -230,15 +229,32 @@ display:grid;
   font-weight: 700;
   color: white;
   margin-bottom: .75rem;
-  display:inline-block
+  display:inline-block;
 }
 
-.card_tag--browser{
-  background-color: #c377e0;
+
+.card_tag--shock{
+  background-color: rgb(193, 193, 0);
 }
 
-.card_tag--high{
-  background-color:#eb5a46;
+.card_tag--cuteButDang{
+  background-color: rgb(183, 38, 183);
+}
+
+.card_tag--draw{
+  background-color: rgb(208, 193, 169);
+}
+
+.card_tag--danger{
+  background-color: rgb(255, 1, 1);
+}
+
+.card_tag--unstable{
+  background-color: rgb(255, 77, 0)
+}
+
+.card_tag--approach{
+  background-color:#3cc797cb;
 }
 
 .card_title{
@@ -248,11 +264,10 @@ display:grid;
 
 .card_actions{
   display:flex;
-  align-items: center;
+  align-items: start;
 }
 
 .card_actions--wrapper i {
-  color: #798d99;
   margin-right: .5rem;
 }
 
@@ -262,12 +277,12 @@ display:grid;
 
 .sightingTitle{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   place-items: center;
+  margin-top: 5rem;
 }
 
 .sightingTitle figure {
-  margin-top: 5rem;
   position:relative;
   
 }
@@ -282,4 +297,12 @@ display:grid;
   bottom: 0;
   background-color: rgba(0,0,0,.5);
   width: 100%;
+}
+
+.card_item img{
+  max-width: 100%;
+}
+
+ol{
+  list-style-type: none;
 }
