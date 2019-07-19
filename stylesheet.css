@@ -156,12 +156,14 @@ display:grid;
   grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
 }
 
+
 .swiper-slide img h3{
   place-self: center;
 }
 
 .swiper-container > .swiper-wrapper > .swiper-slide > img{
   max-height: 18rem;
+  max-width: 100%;
 }
 
 .swiper-slide-prev{
